@@ -1,0 +1,484 @@
+﻿----------------------- Page 1-----------------------
+
+         MCP ile Yapay Zeka 
+İşgörenlerinin Araç Kullanımı 
+
+ Statik Bilgiden Dinamik Kararlara ve Eylemlere 
+
+                    Murat Karakaya 
+                       Prof. Dr. 
+
+                   TED Üniversitesi 
+
+----------------------- Page 2-----------------------
+
+                                                         Gündem 
+
+1.   Giriş: Akıllı İşgörenler Çağı 
+
+      • Yapay Zeka (YZ) İşgöreni (AI Agent) Nedir?  
+
+      • Neden Geleneksel Sohbet Robotlarından Farklıdırlar?  
+
+2.   Büyük Dil Modellerinin (BDM) Kısıtlılıkları 
+
+      • Halüsinasyon (Hallucination), Güncellik ve Bağlam Penceresi (Context Window) Sorunları  
+
+3.   Çözüm Arayışı: Araç Kullanımı (Tool/Function Calling) 
+
+      • Tanım, İş Akışı ve Avantajları  
+
+      • Temel Kısıtlılığı: "N x M Problemi"  
+
+4.   Standartlaşma İhtiyacı: Model Bağlam Protokolü (MCP) 
+
+      • MCP Nedir? "YZ için USB-C Portu"  
+
+      • Geliştiriciler ve Destekçiler  
+
+      • Mimari: Ana Bilgisayar (Host), İstemci (Client) ve Sunucu (Server)  
+
+5.   Karşılaştırmalı Analiz 
+
+      • Araç Kullanımı ve MCP Arasındaki Temel Farklar  
+
+6.   MCP: Fırsatlar, Zorluklar ve Gelecek 
+
+7.   Sonuç ve Soru-Cevap 
+
+----------------------- Page 3-----------------------
+
+         3 
+
+----------------------- Page 4-----------------------
+
+                                 Akıllı  İşgörenler Çağı 
+                                   Muhakemeden Eyleme 
+
+Bir YZ işgöreni (AI Agent), yalnızca girdi-çıktı üreten sistemlerin ötesinde; muhakeme (reasoning) yeteneği ile  
+
+otonom (autonomous) kararlar alıp eyleme geçebilen sistemlerdir. 
+
+Temel Yetenekleri: 
+
+• Niyet Anlama: Kullanıcının karmaşık taleplerini anlar. 
+
+• Planlama: Niyete ulaşmak için bir eylem planı oluşturur. 
+
+• Araç Kullanımı: Planı uygulamak için dış dünyadaki araçları (API'ler, veritabanları vb.) kullanır. 
+
+Örnek Görev: 
+
+• ASYU Konferansı bu yıl nerede ne zaman yapılacak?  
+
+----------------------- Page 5-----------------------
+
+          BDM Tabanlı İşgörenlerin Temel Kısıtlılıkları 
+                     Güçlü Muhakeme, Ancak Kapalı Bir Dünya 
+
+BDM'ler, geniş veri kümeleri üzerinde eğitilerek güçlü genel muhakeme yetenekleri kazansalar da doğaları  
+
+gereği temel kısıtlılıklara sahiptirler. 
+
+1. Halüsinasyon (Hallucination): 
+
+      • Eğitim verilerinde olmayan veya tutarsız bilgilere dayanarak, kulağa mantıklı gelen ancak tamamen yanlış yanıtlar üretebilirler.  
+
+      • Bu durum, finans, hukuk ve tıp gibi hassas alanlarda kritik bir risktir. 
+
+2. Statik ve Güncel Olmayan Bilgi: 
+
+      • BDM'ler eğitildikten sonra bilgileri statikleşir.  
+
+      • Yeni olaylar veya bilgilerle güncellenmeleri çok maliyetli ve verimsizdir. Bu da modellerin hızla güncelliğini yitirmesine neden olur. 
+
+3. Sınırlı Bağlam Penceresi (Context Window): 
+
+      • Tek seferde işleyebilecekleri metin miktarı sınırlıdır. Bu, uzun diyaloglarda veya doküman analizlerinde bağlam kaybına yol açar. 
+
+4. Diğer Sorunlar: 
+
+      •  Eğitim verilerindeki önyargıları (bias) yansıtma ve gizlilik (privacy) endişeleri. 
+
+----------------------- Page 6-----------------------
+
+ İlk Çözüm: Araç Kullanımı (Tool/ Function Calling) 
+                     YZ'nin Dış Dünyaya Açılan Penceresi 
+
+Araç kullanımı, BDM'lerin harici sistemlerle arayüz kurarak eğitim verileri dışında kalan bilgilere erişmesini  
+
+ve eylemler gerçekleştirmesini sağlayan bir mekanizmadır. 
+
+BDM'leri pasif bilgi işlemcilerden, dış dünyayla etkileşime girebilen aktif katılımcılara dönüştürür. 
+
+----------------------- Page 7-----------------------
+
+ İlk Çözüm: Araç Kullanımı (Tool/ Function Calling) 
+                       YZ'nin Dış Dünyaya Açılan Penceresi 
+
+Avantajları: 
+
+     • Dinamik ve Güncel Bilgi Erişimi: Gerçek zamanlı verilere (hava durumu, borsa, müşteri kayıtları)  
+
+     erişim sağlar. 
+
+     • Eylem Gerçekleştirme: Bir CRM güncelleme, e-posta gönderme gibi gerçek dünya eylemlerini mümkün  
+
+     kılar. 
+
+     • Halüsinasyon Azaltma: Yanıtları harici ve doğrulanmış kaynaklardan gelen verilerle üreterek  
+
+     halüsinasyon riskini azaltır. 
+
+----------------------- Page 8-----------------------
+
+Sunumdaki tüm kodlara ve  
+sunumun kendisine    
+https://github.com/kmkarakaya 
+/mcp_tutorial ulaşabilirsiniz. 
+
+----------------------- Page 9-----------------------
+
+Araç Kullanmayan YZ  İşgöreni 
+
+----------------------- Page 10-----------------------
+
+Araç Kullanan YZ  İşgöreni: Basit Görevler 
+
+----------------------- Page 11-----------------------
+
+Araç Kullanan YZ  İşgöreni: Karmaşık Görevler 
+
+----------------------- Page 12-----------------------
+
+                    Araç Kullanımının Temel Kısıtlılığı 
+                Standart Değil, Bir Entegrasyon Soyutlaması 
+
+Araç kullanımı, modelin çıktısını belirli bir formatta (genellikle JSON) olmaya "zorlayan" bir mühendislik  
+
+yaklaşımıdır.  
+
+Sorun: Sağlayıcıya Özgü Formatlar 
+
+• Her BDM sağlayıcısı (OpenAI, Google, Mistral vb.) kendi araç çağırma formatını ve mimarisini geliştirmiştir. 
+
+• Bu durum, geliştiricilerin her model için ayrı entegrasyon kodu yazmasını gerektirir. 
+
+"N x M Problemi": 
+
+• N sayıda farklı BDM'yi, M sayıda farklı araca entegre etmek, N x M adet özel bağlantı katmanı (custom 
+
+connector) oluşturmayı gerektirir. 
+
+• Bu, geliştirme maliyetlerini, karmaşıklığı ve bakım yükünü ciddi şekilde artırmaktadır. 
+
+• Bu parçalı ekosistem, ölçeklenebilir ve sürdürülebilir bir çözüm değildir. Bu durum, standart ve güvenli bir  
+
+protokole olan ihtiyacı doğurmuştur. 
+
+----------------------- Page 13-----------------------
+
+           Çözüm: Model Bağlam Protokolü (MCP) 
+             Entegrasyonun Geleceği: "YZ için USB-C Portu" 
+
+MCP, Kasım 2024'te Anthropic tarafından tanıtılan, BDM'lerin harici araçlar, veriler ve hizmetlerle  
+
+entegrasyonunu standartlaştırmak için tasarlanmış açık kaynaklı (open-source) bir protokoldür.  
+
+Temel Amaç: Araç kullanımının yarattığı "N x M" entegrasyon problemini ortadan kaldırarak, yapay zeka  
+
+ekosistemi için "tak-çalıştır" (plug-and-play) bir mimari oluşturmak. 
+
+----------------------- Page 14-----------------------
+
+            Çözüm: Model Bağlam Protokolü (MCP) 
+             Entegrasyonun Geleceği: "YZ için USB-C Portu" 
+
+Geliştirici ve Destekçiler: 
+
+     • Geliştiren: Anthropic. 
+
+     • Benimseyenler: OpenAI Google, Claude gibi büyük BDM sağlayıcıları tarafından hızla benimsenmiştir. 
+
+     • Ekosistem: VS Code, Cursor, Zed, Replit, Sourcegraph gibi IDE'ler ve kodlama platformları da  
+
+     desteklemektedir. 
+
+Bu geniş endüstri desteği, MCP'nin standart olma potansiyelini güçlendirmektedir. 
+
+----------------------- Page 15-----------------------
+
+VS CODE için MCP Sunucuları 
+
+----------------------- Page 16-----------------------
+
+                         MCP Mimarisi ve Bileşenleri 
+                             Dağıtık ve Modüler Bir Mimari  
+
+MCP,   üç  ana  bileşenden   oluşan  bir istemci-sunucu   (client-server) mimarisine  dayanır. Bu   yapı, ana 
+
+uygulamayı ve araçları birbirinden ayırır. 
+
+1. Ana Bilgisayar (Host): 
+
+2. İstemci (Client): 
+
+3. Sunucu (Server): 
+
+----------------------- Page 17-----------------------
+
+                           MCP Mimarisi ve Bileşenleri 
+                                Dağıtık ve Modüler Bir Mimari  
+
+1. Ana Bilgisayar (Host): 
+
+     • Kullanıcının etkileşimde bulunduğu ana YZ uygulamasıdır (örn. Claude Desktop, VS Code, ya da  
+
+     Uygulamamızın çalıştığı sunucu). 
+
+     • BDM'yi içerir, istemcileri yönetir ve güvenlik politikalarını uygular. 
+
+2. MCP İstemci (Client): 
+
+     • Ana bilgisayar içinde yer alır ve her bir sunucuya bire bir (1:1) bağlantı kurar. 
+
+     • BDM'den gelen istekleri protokole çevirir ve sunucudan gelen yanıtları BDM'ye iletir. 
+
+3. MCP Sunucu (Server): 
+
+     • Dış dünyadaki veri ve araçları sağlayan harici hizmettir. 
+
+     • Yerel bir süreç (dosya sistemi) veya uzak bir API olabilir. 
+
+     • Her sunucu tek bir alana odaklanır (örn. TODO listesi, dosya sistemi), bu da sistemin karmaşıklığını  
+
+     azaltır (Separation of Concerns). 
+
+----------------------- Page 18-----------------------
+
+MCP Mimarisi ve Bileşenleri 
+MCP Sunucusu Oluşturma ve Testi 
+
+----------------------- Page 19-----------------------
+
+    MCP  
+ Mimarisi ve  
+ Bileşenleri 
+
+MCP İstemcisi 
+  Oluşturma 
+
+----------------------- Page 20-----------------------
+
+       MCP ile BDM Entegrasyonu 
+YZ İşgörenlerinin MCP Sunucusunu Kullanması 
+
+----------------------- Page 21-----------------------
+
+                                         Araç Kullanımı x MCP 
+                                    İki Farklı Yaklaşım, Tek Bir Hedef 
+
+Özellik               Araç Kullanımı ( Function Calling)               Model Bağlam Protokolü (MCP) 
+
+                      Monolitik (monolithic) - Araçlar uygulama        Dağıtık (distributed) - Araçlar harici sunucularda  
+Mimari 
+                      içine gömülüdür.                                 çalışır.  
+
+                      Sağlayıcıya özgü (vendor-specific) - Her        Açık Standart (open standard) - Her model ve araç  
+Standartlaşma 
+                      BDM'nin kendi formatı vardır.                    uyumlu olabilir.  
+
+                      Tek seferlik istek-yanıt döngüsü -               Durumlu (stateful) oturum - Uzun diyaloglarda bağlamı  
+Bağlam Yönetimi 
+                      Bağlamın devamlılığı zordur.                     korur.  
+
+Geliştirme            Uygulama bazında düşük, ancak her                Başlangıçta daha karmaşık, ancak ölçeklendikçe  
+
+Karmaşıklığı          entegrasyon için yüksek.                         kolaylaşır.  
+
+                      Uygulama bağımlı - Her geliştirici kendi         Protokol odaklı - Ana bilgisayar (host) izinleri  
+Güvenlik 
+                      önlemini almalıdır.                              merkezden yönetir.  
+
+Yeniden               Düşük - Araçlar tek bir uygulamaya sıkı         Yüksek - Bir MCP sunucusu birçok farklı istemci  
+
+Kullanılabilirlik     sıkıya bağlıdır.                                tarafından kullanılabilir.  
+
+----------------------- Page 22-----------------------
+
+  Karşılaştırmalı Analiz: Araç Kullanımı vs. MCP 
+                                İki Farklı Yaklaşım, Tek Bir Hedef 
+
+Özellik                           Araç Kullanımı ( Function Calling)                      Model Bağlam Protokolü (MCP) 
+
+                                  Monolitik (monolithic) - Araçlar uygulama içine         Dağıtık (distributed) - Araçlar harici sunucularda  
+Mimari 
+                                  gömülüdür.                                              çalışır.  
+
+                                  Sağlayıcıya özgü (vendor-specific) - Her BDM'nin        Açık Standart (open standard) - Her model ve araç  
+Standartlaşma 
+                                  kendi formatı vardır.                                   uyumlu olabilir.  
+
+                                  Tek seferlik istek-yanıt döngüsü - Bağlamın             Durumlu (stateful) oturum - Uzun diyaloglarda  
+Bağlam Yönetimi 
+                                  devamlılığı zordur.                                     bağlamı korur.  
+
+                                  Uygulama bazında düşük, ancak her entegrasyon           Başlangıçta daha karmaşık, ancak ölçeklendikçe  
+Geliştirme Karmaşıklığı 
+                                  için yüksek.                                            kolaylaşır.  
+
+                                  Uygulama bağımlı - Her geliştirici kendi önlemini       Protokol odaklı - Ana bilgisayar (host) izinleri  
+Güvenlik 
+                                  almalıdır.                                              merkezden yönetir.  
+
+                                  Düşük - Araçlar tek bir uygulamaya sıkı sıkıya          Yüksek - Bir MCP sunucusu birçok farklı istemci  
+Yeniden Kullanılabilirlik 
+                                  bağlıdır.                                               tarafından kullanılabilir.  
+
+Temel Çıkarım: Araç kullanımı, BDM'nin "ne yapacağına karar vermesini" sağlarken, MCP "bu  
+
+kararı nasıl standart ve güvenli bir şekilde uygulayacağını" yöneten bir çerçeve sunar 
+
+----------------------- Page 23-----------------------
+
+                   MCP'nin Avantajları ve  Fırsatları 
+                   Standardizasyon, Otonomi ve Güvenlik 
+
+1.  Entegrasyon Probleminin Çözümü: 
+
+     • "N x M" problemini ortadan kaldırarak YZ entegrasyonlarını standartlaştırır. Bir kez yazılan bir MCP  
+
+     sunucusu, tüm uyumlu istemcilerle çalışabilir. Bu, geliştirme maliyetlerini ve süresini ciddi oranda  
+
+     azaltır. 
+
+2. Artırılmış Otonomi ve Yetenek: 
+
+     • BDM'lerin CRM güncelleme, gerçek zamanlı veri analizi veya karmaşık hesaplamalar gibi görevleri  
+
+     otonom olarak gerçekleştirmesini sağlar. 
+
+----------------------- Page 24-----------------------
+
+                      MCP'nin Avantajları ve  Fırsatları 
+                      Standardizasyon, Otonomi ve Güvenlik 
+
+3. Gelişmiş Güvenlik Modeli: 
+
+     • Geleneksel araç kullanımına kıyasla daha güvenli bir model sunar. Ana bilgisayar (host), izin  
+
+     denetimini merkezi olarak yöneterek hassas verilere erişimi ve komut çalıştırmayı  kontrol altında  
+
+     tutar. 
+
+4. Yeniden Kullanılabilirlik ve  Bakım Kolaylığı: 
+
+     • Dağıtık mimarisi sayesinde, araçlar (sunucular) farklı uygulamalarda yeniden  kullanılabilir ve  
+
+     bağımsız olarak güncellenebilir. 
+
+----------------------- Page 25-----------------------
+
+Docker üzerinden MCP Sunucusunu Kullanma 
+
+----------------------- Page 26-----------------------
+
+                    MCP'nin  Kısıtlılıkları ve Zorlukları 
+                               Dikkate Alınması Gerekenler 
+
+1. Başlangıç Karmaşıklığı: 
+
+• Geleneksel (monolitik) araç kullanımına göre, ayrı sunucu süreçleri çalıştırmayı gerektirdiği için daha  
+
+karmaşık bir başlangıç ve yönetim süreci vardır. Özellikle basit uygulamalar  için ek bir yük oluşturabilir. 
+
+2. Potansiyel Gecikme (Latency): 
+
+• Protokolün getirdiği ek soyutlama katmanı ve ağ iletişimi, potansiyel  bir gecikme ek yüküne (overhead)  
+
+neden olabilir. Düşük gecikme gerektiren gerçek zamanlı uygulamalar  için bu bir endişe kaynağı olabilir. 
+
+----------------------- Page 27-----------------------
+
+                     MCP'nin  Kısıtlılıkları ve Zorlukları 
+                                Dikkate Alınması Gerekenler 
+
+3. Yeni Güvenlik Riskleri: 
+
+• Harici kod çalıştırma yeteneği doğası gereği risklidir. 
+
+• Kötü niyetli sunucular aracılığıyla yetkisiz komut enjeksiyonu  (command injection) veya "kafası karışmış  
+
+vekil" (confused deputy) gibi yeni saldırı vektörleri ortaya çıkabilir. 
+
+• Protokol güvenlik prensipleri sunsa da, bunların doğru bir şekilde uygulanması geliştiricinin  
+
+sorumluluğundadır. 
+
+----------------------- Page 28-----------------------
+
+                        Sonuç ve Gelecek  Perspektifi 
+                       YZ  Entegrasyonunda Yeni Bir Dönem 
+
+Ana Çıkarımlar: 
+
+• BDM'lerin doğal kısıtlılıkları (halüsinasyon, güncellik eksikliği), onları dış dünyaya  bağlama ihtiyacını  
+
+doğurmuştur. 
+
+• Araç kullanımı bu ihtiyaca ilk yanıt olmuş, ancak standartlaşma eksikliği "N x M" problemini yaratmıştır. 
+
+• MCP, bu problemi çözmek için tasarlanmış, dağıtık mimariye sahip açık kaynaklı bir standarttır. 
+
+• Araç kullanımı "ne yapılacağını", MCP ise "bunun nasıl yapılacağını" tanımlayan, birbirini tamamlayan  
+
+katmanlardır. 
+
+----------------------- Page 29-----------------------
+
+                        Sonuç ve Gelecek  Perspektifi 
+                       YZ  Entegrasyonunda Yeni Bir Dönem 
+
+MCP'nin Geleceği: 
+
+• Anthropic, OpenAI ve Google DeepMind gibi endüstri devlerinin desteğiyle YZ için evrensel bir standart olma  
+
+potansiyeli taşımaktadır. 
+
+• Kullanım alanlarının, basit sohbet arayüzlerinin ötesine geçerek entegre geliştirme ortamları (IDE'ler), robotik  
+
+ve ev otomasyonu gibi alanlara yayılması  beklenmektedir. 
+
+• MCP, daha akıllı, otonom ve entegre YZ işgörenlerinin gelişimini hızlandıracaktır. 
+
+----------------------- Page 30-----------------------
+
+Sunum boyunca gösterdiğiniz ilgi ve sabır  için teşekkür  
+ederim. 
+
+Fikirlerinizi, yorumlarınızı ve sorularınızı dinlemek için  
+sabırsızlanıyorum. 
+
+                                      30 
+
+----------------------- Page 31-----------------------
+
+                               İrtibat için 
+
+https://www.muratkarakaya.net/ 
+
+murat.karakaya@tedu.edu.tr 
+
+kmkarakaya@gmail.com 
+
+https://www.youtube.com/c/muratkarakayaakademi 
+
+https://www.linkedin.com/in/muratkarakaya/ 
+
+                                      31 
+
+----------------------- Page 32-----------------------
+
+Soru Ve Yorumlar 
+
+                   ? 
