@@ -29,11 +29,13 @@ Key points:
 
 ## Usage and examples
 
-- Inspect available tools with the official MCP Inspector (requires Node.js):
+- Inspect available tools with the official MCP Inspector (requires Node.js and npm or Corepack installed):
 
   ```powershell
   npx @modelcontextprotocol/inspector
   ```
+
+  Note: `npx` comes with npm (or use Corepack on newer Node versions). Install Node.js from https://nodejs.org/ if you don't have `node`/`npm` on your system.
 
 - Run the example client to call a tool programmatically:
 
